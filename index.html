@@ -1,96 +1,280 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <title>Recensioni L'Angolo</title>
   <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-    }
-    .recensioni-container {
-      display: flex;
-      animation: scorrimento 40s linear infinite;
-      width: max-content;
-    }
-    .recensioni-wrapper {
-      overflow-x: hidden;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .recensione {
-      flex: 0 0 auto;
-      width: 300px;
-      height: 300px;
-      background: #f8f8f8;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-right: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .recensione img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-    .recensione h4 {
-      margin: 0;
-      font-size: 18px;
-    }
-    .recensione p.data {
-      color: gray;
-      font-size: 12px;
-      margin: 5px 0;
-    }
-    .recensione p.stelle {
-      color: #f5b50a;
-      font-size: 20px;
-      margin: 5px 0;
-    }
-    .recensione p.commento {
-      font-size: 16px;
-      color: #333;
-      flex-grow: 1;
-    }
-
-    @keyframes scorrimento {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    body { margin:0; padding:20px; font-family:Arial,sans-serif; background:#fff; }
+    .recensioni-wrapper { overflow-x:hidden; width:100%; max-width:1200px; margin:0 auto; }
+    .recensioni-container { display:flex; animation:scorrimento 40s linear infinite; width:max-content; }
+    .recensione { flex:0 0 auto; width:300px; height:300px; background:#f8f8f8; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:20px; margin-right:20px; display:flex; flex-direction:column; justify-content:space-between; }
+    .recensione img { width:60px; height:60px; border-radius:50%; margin-bottom:10px; }
+    .recensione h4 { margin:0; font-size:18px; }
+    .recensione p.data { color:gray; font-size:12px; margin:5px 0; }
+    .recensione p.stelle { color:#f5b50a; font-size:20px; margin:5px 0; }
+    .recensione p.commento { font-size:16px; color:#333; flex-grow:1; }
+    @keyframes scorrimento { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
   </style>
 </head>
 <body>
-
 <h2 style="text-align:center;">Cosa dicono i nostri clienti</h2>
-
 <div class="recensioni-wrapper">
   <div class="recensioni-container">
-    <div class="recensione">
-      <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Cliente">
-      <h4>Sabrina Barbieri</h4>
-      <p class="data">01/05/2025</p>
-      <p class="stelle">★★★★★</p>
-      <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile.</p>
-    </div>
 
-    <div class="recensione">
-      <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="Cliente">
-      <h4>Mario Laino</h4>
-      <p class="data">03/05/2025</p>
-      <p class="stelle">★★★★★</p>
-      <p class="commento">Buon prodotto, spedizione veloce, assistenza top!</p>
-    </div>
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Sabrina Barbieri">
+  <h4>Sabrina Barbieri</h4>
+  <p class="data">05/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile
 
-    <!-- Altre recensioni duplicando qui -->
-  </div>
+(Translated by Google)
+A really well-stocked shop, excellent products. Very kind staff</p>
 </div>
 
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocJkgZj3f6zbGDWE7uaulYrdUUSotAXCxJ0bPZgzQf4DrQQ5yA=s120-c-rp-mo-br100" alt="MAURO ASCIONE">
+  <h4>MAURO ASCIONE</h4>
+  <p class="data">07/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Tutto ok. Ottima comunicazione
+
+(Translated by Google)
+Everything OK. Excellent communication</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocIvhpy5X1u5HRZ4eNfe1iraeaz48gey-NpxxVM7KWQ49m6L1A=s120-c-rp-mo-br100" alt="Mario Laino">
+  <h4>Mario Laino</h4>
+  <p class="data">08/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Good product, I have been purchasing these shoes for several years, I use them for dancing, Delivered on time
+
+(Original)
+Buon prodotto , sono diversi anni che acquisto queste scarpe , io le uso per ballare , Consegnato nel tempo previsto</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="MySergio78">
+  <h4>MySergio78</h4>
+  <p class="data">08/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Excellent service with cutting-edge products
+
+(Original)
+Ottimo servizio con prodotti all'avanguardia</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocIPbzWEzRyEqEaU12Px2Sf-FhXz7_47CO239rzr1_Xv5iBk9w=s120-c-rp-mo-br100" alt="Elisabetta Piersimoni">
+  <h4>Elisabetta Piersimoni</h4>
+  <p class="data">10/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Everything OK! Precise and timely information. Delivery on time.
+
+(Original)
+Tutto OK! Informazioni precise e puntuali. Consegna nei tempi.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjXYIb_NR5M98N-UUwREELdI25c3TfEdl7XS0bSJ_F9Cr44mznSXLg=s120-c-rp-mo-br100" alt="Guido Vitale">
+  <h4>Guido Vitale</h4>
+  <p class="data">10/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Excellent product at a fair price. Satisfied
+
+(Original)
+Ottimo prodotto ad un giusto prezzo. Soddisfatto</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocK6HBEP33vHbGFSd-Wl10ng_wBQQBwTjMQL-vauMz122rucIw=s120-c-rp-mo-br100" alt="Virginia Falcone">
+  <h4>Virginia Falcone</h4>
+  <p class="data">11/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Scarpe perfettamente corrispondenti all'ordine. Belle e soprattutto comodissime
+
+(Translated by Google)
+Shoes perfectly matching the order. Beautiful and above all very comfortable</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocKEURTEeYz5bo5AluzH238QnhGmwa6JM7yDcgcb4eDHjOZ-kg=s120-c-rp-mo-br100" alt="Luca Beltutti">
+  <h4>Luca Beltutti</h4>
+  <p class="data">14/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Ordered 2 pairs of identical slippers. They contact me to let me know that a pair is similar but not the same. I check from the site and everything seems ok, so I accept the exchange. Once it arrived I saw that the made in Italy advertised was made in Albania and the sole was not up to the standard of the product I ordered (I have 5 old pairs). Contacted for clarification, it seems that they don't even know what they are selling, if in good faith. I have some doubts.....
+
+(Original)
+Ordinate 2 paia di ciabatte uguali. Mi contattano per avvisarmi che un paio ? simile ma non uguale. Controllo dal sito e sembra tutto ok,  quindi accetto lo scambio. Una volta arrivato vedo che il made in italia pubblicizzato ?  un made in albania e la suola non all'altezza del prodotto da me ordinato ( ne ho 5 paia vecchie). Contattati per chiarimenti, sembra che non sanno nemmeno cosa vendono, se in buona fede. Qualche dubbio mi viene.....</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjVzNT3KK1k2lM3U-mY86n7LOqTJbYQFWWRvQE6yQx-9QLQTdtmYzA=s120-c-rp-mo-ba3-br100" alt="Cody">
+  <h4>Cody</h4>
+  <p class="data">28/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) I have made some purchases on their site and have always been satisfied. Shipping is fast and the products are of excellent quality. Recommended.
+
+(Original)
+Ho fatto alcuni acquisti sul loro sito e mi sono sempre trovata bene. La spedizione ? veloce ed i prodotti sono di ottima qualit?. Consigliato.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocIaMtv90ONGd5QeKWQZUHmNH6quwCpgzXnsvdKyz0Uq4_G8=s120-c-rp-mo-ba3-br100" alt="massimo bertoletti">
+  <h4>massimo bertoletti</h4>
+  <p class="data">28/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Competent and very kind staff
+
+(Original)
+Personale competente e gentilissimo</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocLurEeQ0mnVJ4IhT7KAchddU4n7uWGgvTrrKkwizuUFETJTzA=s120-c-rp-mo-br100" alt="sesto ciccotti">
+  <h4>sesto ciccotti</h4>
+  <p class="data">28/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) This is my first time buying from L''Angolo shoe store. Great experience: quality shoes and timely delivery. Really compliments.
+
+(Original)
+E' la prima volta che acquisto dal negozio di scarpe L''Angolo. Ottima esperienza:  scarpe di qualit? e consegna tempestiva. Davvero complimenti.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocJUxKGvS6ef-JNXxZojITRWipKmOvB-hwyDaOvbRzdzGsj6iw=s120-c-rp-mo-br100" alt="Alessandra Serra">
+  <h4>Alessandra Serra</h4>
+  <p class="data">29/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) It was my first purchase, but I have to say I am very satisfied. Great prices, great quality and fast delivery, highly recommended!
+
+(Original)
+? stato il mio primo acquisto, ma devo dire che sono molto soddisfatta. Ottimi prezzi, ottima qualit? e velocit? nella consegna, super consigliato!</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocKJSM7sJ2A8ao726skgVHR6ZLxBvwI5DzYQYx_Y6nYLkL6AEw=s120-c-rp-mo-br100" alt="Zuccolo Nadina">
+  <h4>Zuccolo Nadina</h4>
+  <p class="data">29/01/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) Great service. Product meets expectations.
+
+(Original)
+Ottimo servizio. Prodotto corrispondente alle aspettative.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocJ-TSqcayQgpTk23XcvyrH_WsTIUd8Wf5R2R4cfGSuPU2B02A=s120-c-rp-mo-ba3-br100" alt="anna di giacobbe">
+  <h4>anna di giacobbe</h4>
+  <p class="data">02/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Sono una persona che ? molto attenta al materiale delle scarpe, mi riferisco alla tomaia, non deve essere di altro materiale se non di vera pelle. Altrimenti le nomino scarpe finte. Per questo motivo scelgo spesso le scarpe ai iG &Co.
+
+(Translated by Google)
+I am a person who is very careful about the material of the shoes, I am referring to the upper, it must not be made of any other material than real leather. Otherwise I call them fake shoes. For this reason I often choose shoes at iG & Co.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjXg3PJWzHtqjFuk2ZKQwGsEd9CDKAtd_LF4dcAHTYIMj_dq2ktn=s120-c-rp-mo-br100" alt="ZEDDA GIAMPAOLO">
+  <h4>ZEDDA GIAMPAOLO</h4>
+  <p class="data">03/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Ottimo prodotto, come ordinato, arrivato puntuale. Grazie
+
+(Translated by Google)
+Great product, as ordered, arrived on time. Thanks</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocLnMr6vWeKY_d7ZndQUVKCsGWl68WZHYMmZDWsFYRCFhk_HCQ=s120-c-rp-mo-br100" alt="Anuska Alvisi">
+  <h4>Anuska Alvisi</h4>
+  <p class="data">05/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Complimenti! Prodotto ottimo e spedizione veloce. Sono molto soddisfatta. Consiglio
+
+(Translated by Google)
+Congratulations! Excellent product and fast shipping. I am very satisfied. I recommend</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocIMHadElejaCRxMlJvP3L6khHXo-dam_YFUGOdHr7Zx6vaHFg=s120-c-rp-mo-br100" alt="Angelo Ritacco">
+  <h4>Angelo Ritacco</h4>
+  <p class="data">06/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">benissimo. arrivo dal nord al sud in 3 giorni, tutto puantale e corretto. grazie al prossimo ordine
+
+(Translated by Google)
+very good. I arrive from north to south in 3 days, everything on time and correct. thanks for the next order</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocK6ulkcmfCeosbv7X4_gfkMK1OKAX4doU5-FXGaqzDeE0TOVQ=s120-c-rp-mo-br100" alt="Giuseppe Mariotti">
+  <h4>Giuseppe Mariotti</h4>
+  <p class="data">06/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Venditore efficiente e corretto. Tempi di spedizione rispettati. Articolo come da descrizione.
+
+(Translated by Google)
+Efficient and correct seller. Shipping times respected. Item as described.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocJVtBuIZnn4Hu79vwJAn9-I6QmnUqQQKFxGEEINBS9HU6QW0A=s120-c-rp-mo-br100" alt="Cristiano Buongiovanni">
+  <h4>Cristiano Buongiovanni</h4>
+  <p class="data">07/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Veloci nella spedizione
+grazie mille
+
+(Translated by Google)
+Fast shipping
+thanks a lot</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocIPjfRYP5LPMlQWdgPwJu97miwLJf8Zr-RXQ7cHIyPwo_p0x4Q=s120-c-rp-mo-br100" alt="Luca Zabeo">
+  <h4>Luca Zabeo</h4>
+  <p class="data">11/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Gi? provato le calzature da ballo latino... Numero perfetto... Velocissimi nella consegna... Prezzo perfetto...
+
+(Translated by Google)
+Already tried the Latin dance shoes... Perfect size... Very fast delivery... Perfect price...</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocI2dX3S2NhR6HnAA7OfTo8-MdHLVx8mEP3GGl6rGqq0axyq2w=s120-c-rp-mo-br100" alt="Giorgio Giulio Ronchetti">
+  <h4>Giorgio Giulio Ronchetti</h4>
+  <p class="data">11/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Ottimo servizio , complimenti.
+
+(Translated by Google)
+Excellent service, congratulations.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocKS2zt-lp8xb76WS4b2u_tZ-5gLu3T_qCi6X80H2TjFrCG1Sg=s120-c-rp-mo-br100" alt="Lucia Cutuli">
+  <h4>Lucia Cutuli</h4>
+  <p class="data">13/02/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">(Translated by Google) I bought the blue slippers covered in boiled wool to give them to a friend, who really liked them and was satisfied: cute, warm, comfortable and light. I would add that the delivery was punctual, the courier was kind and efficient. Excellent value for money.
+
+(Original)
+Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un' amica, che le ha molto gradite ed ? rimasta soddisfatta: carine, calde, comode e leggere. Aggiungo che la consegna ? stata puntuale, il corriere gentile ed efficiente. Ottimo il rapporto qualit? -prezzo.</p>
+</div>
+
+<div class="recensione">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjWF53wZu7oZn3WxaszIlIH0ayPeTXwBKSrFGG84pHtGv8uyRQCA=s120-c-rp-mo-br100" alt="Mariarosa Borsa">
+  <h4>Mariarosa Borsa</h4>
+  <p class="data">27/04/2025</p>
+  <p class="stelle">?????</p>
+  <p class="commento">Mariarosa Borsa Grazie per aver dedicato il tuo tempo per lasciarci questa recensione. 5 Stelle sono una grande soddisfazione per noi!</p>
+</div>
+
+  </div>
+</div>
 </body>
 </html>
