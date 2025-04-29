@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -12,17 +12,27 @@
     }
     .recensioni-container {
       display: flex;
-      overflow-x: auto;
-      gap: 20px;
+      animation: scorrimento 40s linear infinite;
+      width: max-content;
+    }
+    .recensioni-wrapper {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .recensione {
       flex: 0 0 auto;
-      width: 350px;
+      width: 300px;
+      height: 300px;
       background: #f8f8f8;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      margin-bottom: 10px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .recensione img {
       width: 60px;
@@ -31,7 +41,7 @@
       margin-bottom: 10px;
     }
     .recensione h4 {
-      margin: 0 0 5px 0;
+      margin: 0;
       font-size: 18px;
     }
     .recensione p.data {
@@ -41,38 +51,5 @@
     }
     .recensione p.stelle {
       color: #f5b50a;
-      font-size: 18px;
-      margin: 5px 0;
-    }
-    .recensione p.commento {
-      font-size: 16px;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
+      font-size: 20
 
-<h2 style="text-align:center;">Cosa dicono i nostri clienti</h2>
-
-<div class="recensioni-container">
-  <div class="recensione">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Cliente">
-    <h4>Sabrina Barbieri</h4>
-    <p class="data">01/05/2025</p>
-    <p class="stelle">★★★★★</p>
-    <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile.</p>
-  </div>
-
-  <div class="recensione">
-    <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="Cliente">
-    <h4>Mario Laino</h4>
-    <p class="data">03/05/2025</p>
-    <p class="stelle">★★★★★</p>
-    <p class="commento">Buon prodotto, spedizione veloce, assistenza top!</p>
-  </div>
-
-  <!-- Aggiungiamo qui altre recensioni -->
-</div>
-
-</body>
-</html>
