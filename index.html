@@ -1,6 +1,78 @@
-<div style="flex: 0 0 auto; width:350px; margin:10px; padding:20px; background:#f8f8f8; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <h4 style="margin:0;">Nome Cliente</h4>
-  <p style="color:gray; font-size:12px; margin:5px 0;">01/05/2025</p>
-  <p style="color:#f5b50a;">★★★★★</p>
-  <p style="font-size:16px;">Testo della recensione...</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Recensioni L'Angolo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+    .recensioni-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+    }
+    .recensione {
+      flex: 0 0 auto;
+      width: 350px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .recensione img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .recensione h4 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+    }
+    .recensione p.data {
+      color: gray;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    .recensione p.stelle {
+      color: #f5b50a;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .recensione p.commento {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Cosa dicono i nostri clienti</h2>
+
+<div class="recensioni-container">
+  <div class="recensione">
+    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Cliente">
+    <h4>Sabrina Barbieri</h4>
+    <p class="data">01/05/2025</p>
+    <p class="stelle">★★★★★</p>
+    <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile.</p>
+  </div>
+
+  <div class="recensione">
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="Cliente">
+    <h4>Mario Laino</h4>
+    <p class="data">03/05/2025</p>
+    <p class="stelle">★★★★★</p>
+    <p class="commento">Buon prodotto, spedizione veloce, assistenza top!</p>
+  </div>
+
+  <!-- Aggiungiamo qui altre recensioni -->
 </div>
+
+</body>
+</html>
