@@ -6,19 +6,20 @@ body {
   background-color: #fff;
 }
 .recensioni-wrapper {
-  overflow-x: hidden; /* nascondi eventuali scrollbar orizzontali */
+  overflow-x: auto;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .recensioni-container {
   display: flex;
-  width: max-content; /* larghezza quanto basta per contenere tutte le recensioni */
-  animation: scorrimento 80s linear infinite; /* lento scorrimento */
+  width: fit-content;
+  animation: scorrimento 80s linear infinite;
 }
 .recensione {
   flex: 0 0 auto;
-  width: 300px;
-  min-height: 300px;
+  width: 320px;
+  min-height: 320px;
   background: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -58,53 +59,3 @@ body {
   100% { transform: translateX(-50%); }
 }
 </style>
-
-<div class="recensioni-container">
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Sabrina Barbieri">
-  <h4>Sabrina Barbieri</h4>
-  <p class="data">05/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile.</p>
-</div>
-
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a/ACg8ocJkgZj3f6zbGDWE7uaulYrdUUSotAXCxJ0bPZgzQf4DrQQ5yA=s120-c-rp-mo-br100" alt="MAURO ASCIONE">
-  <h4>MAURO ASCIONE</h4>
-  <p class="data">07/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Tutto ok. Ottima comunicazione.</p>
-</div>
-
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a/ACg8ocIvhpy5X1u5HRZ4eNfe1iraeaz48gey-NpxxVM7KWQ49m6L1A=s120-c-rp-mo-br100" alt="Mario Laino">
-  <h4>Mario Laino</h4>
-  <p class="data">08/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Buon prodotto, sono diversi anni che acquisto queste scarpe. Le uso per ballare. Consegna nei tempi previsti.</p>
-</div>
-
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="MySergio78">
-  <h4>MySergio78</h4>
-  <p class="data">08/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Ottimo servizio con prodotti all'avanguardia.</p>
-</div>
-
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a/ACg8ocIPbzWEzRyEqEaU12Px2Sf-FhXz7_47CO239rzr1_Xv5iBk9w=s120-c-rp-mo-br100" alt="Elisabetta Piersimoni">
-  <h4>Elisabetta Piersimoni</h4>
-  <p class="data">10/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Tutto OK! Informazioni precise e puntuali. Consegna nei tempi.</p>
-</div>
-
-<div class="recensione">
-  <img src="https://lh3.googleusercontent.com/a-/ALV-UjXYIb_NR5M98N-UUwREELdI25c3TfEdl7XS0bSJ_F9Cr44mznSXLg=s120-c-rp-mo-br100" alt="Guido Vitale">
-  <h4>Guido Vitale</h4>
-  <p class="data">10/01/2025</p>
-  <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  <p class="commento">Ottimo prodotto ad un giusto prezzo. Soddisfatto.</p>
-</div>
-
