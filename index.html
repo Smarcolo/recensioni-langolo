@@ -51,5 +51,46 @@
     }
     .recensione p.stelle {
       color: #f5b50a;
-      font-size: 20
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    .recensione p.commento {
+      font-size: 16px;
+      color: #333;
+      flex-grow: 1;
+    }
 
+    @keyframes scorrimento {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Cosa dicono i nostri clienti</h2>
+
+<div class="recensioni-wrapper">
+  <div class="recensioni-container">
+    <div class="recensione">
+      <img src="https://lh3.googleusercontent.com/a-/ALV-UjXBm_v2FWVGaepfiVSxeWdvy-bd6Zgz_HVMB8HWUCHjTY7p8KIE=s120-c-rp-mo-ba5-br100" alt="Cliente">
+      <h4>Sabrina Barbieri</h4>
+      <p class="data">01/05/2025</p>
+      <p class="stelle">★★★★★</p>
+      <p class="commento">Davvero un negozio molto rifornito, ottimi prodotti. Personale molto gentile.</p>
+    </div>
+
+    <div class="recensione">
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocKy-qxNe41pnGdKvMcbvdHqhGDYwSZ1hPxGzAMcIg_qcpkWMQ=s120-c-rp-mo-ba3-br100" alt="Cliente">
+      <h4>Mario Laino</h4>
+      <p class="data">03/05/2025</p>
+      <p class="stelle">★★★★★</p>
+      <p class="commento">Buon prodotto, spedizione veloce, assistenza top!</p>
+    </div>
+
+    <!-- Altre recensioni duplicando qui -->
+  </div>
+</div>
+
+</body>
+</html>
