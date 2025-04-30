@@ -18,15 +18,16 @@
 
     .iframe-wrapper {
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      scroll-behavior: smooth;
     }
 
     iframe {
-      min-width: 1000px; /* puoi regolarlo */
-      width: 100%;
+      min-width: 1000px;
+      width: 2000px; /* larghezza fissa grande per scroll */
       height: 700px;
       border: none;
-      display: block;
+      display: inline-block;
     }
   </style>
 </head>
@@ -34,13 +35,28 @@
 
   <h2>Cosa dicono i nostri clienti 👇</h2>
 
-  <div class="iframe-wrapper">
+  <div class="iframe-wrapper" id="scroll-container">
     <iframe 
       src="https://script.google.com/macros/s/AKfycbyBmqRG0H-eRsAm5aVTOo7JCjvToIo2EF2TFB1j8qyp99zllivWF7_sEv4-ngjameVA9g/exec" 
       loading="lazy" 
       allowfullscreen>
     </iframe>
   </div>
+
+  <script>
+    const container = document.getElementById('scroll-container');
+    let scrollAmount = 0;
+
+    function autoScroll() {
+      scrollAmount += 1;
+      if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+        scrollAmount = 0;
+      }
+      container.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    }
+
+    setInterval(autoScroll, 40); // più basso = più veloce
+  </script>
 
 </body>
 </html>
