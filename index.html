@@ -11,15 +11,19 @@
       background-color: #fff;
     }
     .recensioni-wrapper {
-      overflow-x: auto;
+      overflow: hidden;
       width: 100%;
       margin: 0 auto;
       padding-bottom: 20px;
     }
     .recensioni-container {
       display: flex;
-      width: fit-content;
-      animation: scorrimento 60s linear infinite;
+      width: max-content;
+      animation: scroll 40s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
     .recensione {
       flex: 0 0 auto;
@@ -59,18 +63,13 @@
       color: #333;
       flex-grow: 1;
     }
-    @keyframes scorrimento {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    /* --- MOBILE FRIENDLY --- */
     @media screen and (max-width: 768px) {
       .recensione {
         width: 90%;
         min-height: auto;
       }
       .recensioni-container {
-        animation: scorrimento 120s linear infinite;
+        animation: scroll 80s linear infinite;
       }
       .recensione h4 {
         font-size: 16px;
@@ -88,7 +87,7 @@
 <div class="recensioni-wrapper">
   <div class="recensioni-container">
 
-    <!-- Qui iniziano le recensioni dinamiche -->
+    <!-- RECENSIONI ORIGINALI -->
     <div class="recensione">
       <img src="https://lh3.googleusercontent.com/a-/ALV-UjWF53wZu7oZn3WxaszIlIH0ayPeTXwBKSrFGG84pHtGv8uyRQCA=s120-c-rp-mo-br100" alt="Mariarosa Borsa">
       <h4>Mariarosa Borsa</h4>
@@ -113,11 +112,35 @@
       <p class="commento">Ottimo servizio, complimenti.</p>
     </div>
 
-    <!-- Altre recensioni seguiranno dinamicamente -->
+    <!-- DUPLICAZIONE PER LOOP INFINITO -->
+    <div class="recensione">
+      <img src="https://lh3.googleusercontent.com/a-/ALV-UjWF53wZu7oZn3WxaszIlIH0ayPeTXwBKSrFGG84pHtGv8uyRQCA=s120-c-rp-mo-br100" alt="Mariarosa Borsa">
+      <h4>Mariarosa Borsa</h4>
+      <p class="data">27/04/2025</p>
+      <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p class="commento">Mariarosa Borsa Grazie per aver dedicato il tuo tempo per lasciarci questa recensione. 5 Stelle sono una grande soddisfazione per noi!</p>
+    </div>
+
+    <div class="recensione">
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocKS2zt-lp8xb76WS4b2u_tZ-5gLu3T_qCi6X80H2TjFrCG1Sg=s120-c-rp-mo-br100" alt="Lucia Cutuli">
+      <h4>Lucia Cutuli</h4>
+      <p class="data">13/02/2025</p>
+      <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p class="commento">Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un'amica, che le ha molto gradite ed è rimasta soddisfatta: carine, calde, comode e leggere.</p>
+    </div>
+
+    <div class="recensione">
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocI2dX3S2NhR6HnAA7OfTo8-MdHLVx8mEP3GGl6rGqq0axyq2w=s120-c-rp-mo-br100" alt="Giorgio Giulio Ronchetti">
+      <h4>Giorgio Giulio Ronchetti</h4>
+      <p class="data">11/02/2025</p>
+      <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p class="commento">Ottimo servizio, complimenti.</p>
+    </div>
 
   </div>
 </div>
 
 </body>
 </html>
+
 
