@@ -5,86 +5,28 @@
   <meta charset="UTF-8">
   <title>Recensioni L'Angolo</title>
   <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-    }
-    h2.media-voto {
-      text-align: center;
-      font-size: 22px;
-      color: #f5b50a;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    .recensioni-wrapper {
-      overflow: hidden;
-      width: 100%;
-      margin: 0 auto;
-      padding-bottom: 20px;
-    }
-    .recensioni-container {
-      display: flex;
-      width: max-content;
-      animation: scroll 40s linear infinite;
-    }
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    body { margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #fff; }
+    h2.media-voto { text-align: center; font-size: 22px; color: #f5b50a; margin-bottom: 10px; font-weight: bold; }
+    .recensioni-wrapper { overflow: hidden; width: 100%; margin: 0 auto; padding-bottom: 20px; }
+    .recensioni-container { display: flex; width: max-content; animation: scroll 40s linear infinite; }
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     .recensione {
-      flex: 0 0 auto;
-      width: 320px;
-      min-height: 320px;
-      background: #f8f8f8;
-      border-radius: 10px;
+      flex: 0 0 auto; width: 320px; min-height: 320px;
+      background: #f8f8f8; border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 20px; margin: 10px;
+      display: flex; flex-direction: column; justify-content: space-between;
     }
-    .recensione img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-    .recensione h4 {
-      margin: 0;
-      font-size: 18px;
-    }
-    .recensione p.data {
-      color: gray;
-      font-size: 12px;
-      margin: 5px 0;
-    }
-    .recensione p.stelle {
-      color: #f5b50a;
-      font-size: 20px;
-      margin: 5px 0;
-    }
-    .recensione p.commento {
-      font-size: 16px;
-      color: #333;
-      flex-grow: 1;
-    }
+    .recensione img { width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px; }
+    .recensione h4 { margin: 0; font-size: 18px; }
+    .recensione p.data { color: gray; font-size: 12px; margin: 5px 0; }
+    .recensione p.stelle { color: #f5b50a; font-size: 20px; margin: 5px 0; }
+    .recensione p.commento { font-size: 16px; color: #333; flex-grow: 1; }
     @media screen and (max-width: 768px) {
-      .recensione {
-        width: 90%;
-        min-height: auto;
-      }
-      .recensioni-container {
-        animation: scroll 80s linear infinite;
-      }
-      .recensione h4 {
-        font-size: 16px;
-      }
-      .recensione p.commento {
-        font-size: 14px;
-      }
+      .recensione { width: 90%; min-height: auto; }
+      .recensioni-container { animation: scroll 80s linear infinite; }
+      .recensione h4 { font-size: 16px; }
+      .recensione p.commento { font-size: 14px; }
     }
   </style>
 </head>
