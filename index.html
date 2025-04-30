@@ -21,6 +21,10 @@
       height: 620px;
       border: none;
       overflow: hidden;
+      scrollbar-width: none; /* Firefox */
+    }
+    iframe::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
     }
   </style>
 </head>
@@ -28,38 +32,10 @@
 
   <h2>Cosa dicono i nostri clienti 👇</h2>
 
-  <iframe id="reviewsFrame"
+  <iframe
     src="https://script.google.com/macros/s/AKfycbyBmqRG0H-eRsAm5aVTOo7JCjvToIo2EF2TFB1j8qyp99zllivWF7_sEv4-ngjameVA9g/exec"
     scrolling="no">
   </iframe>
-
-  <script>
-    // Autoscroll orizzontale dentro l’iframe
-    const scrollSpeed = 0.4; // Velocità (più basso = più lento)
-
-    const startAutoScroll = () => {
-      const iframe = document.getElementById('reviewsFrame');
-      let scrollLeft = 0;
-
-      const interval = setInterval(() => {
-        if (iframe && iframe.contentWindow && iframe.contentDocument) {
-          const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-          const container = innerDoc.querySelector('.container');
-          if (container) {
-            scrollLeft += scrollSpeed;
-            container.scrollLeft = scrollLeft;
-            if (scrollLeft >= container.scrollWidth - container.clientWidth) {
-              scrollLeft = 0; // ricomincia da capo
-            }
-          }
-        }
-      }, 20); // ogni 20ms = ~50fps
-    };
-
-    window.addEventListener("load", () => {
-      setTimeout(startAutoScroll, 1000); // aspetta caricamento iframe
-    });
-  </script>
 
 </body>
 </html>
