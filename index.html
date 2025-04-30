@@ -5,33 +5,91 @@
   <meta charset="UTF-8">
   <title>Recensioni L'Angolo</title>
   <style>
-    body { margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #fff; }
-    h2.media-voto { text-align: center; font-size: 22px; color: #f5b50a; margin-bottom: 10px; font-weight: bold; }
-    .recensioni-wrapper { overflow: hidden; width: 100%; margin: 0 auto; padding-bottom: 20px; }
-    .recensioni-container { display: flex; width: max-content; animation: scroll 40s linear infinite; }
-    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    .recensione {
-      flex: 0 0 auto; width: 320px; min-height: 320px;
-      background: #f8f8f8; border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px; margin: 10px;
-      display: flex; flex-direction: column; justify-content: space-between;
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
     }
-    .recensione img { width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px; }
-    .recensione h4 { margin: 0; font-size: 18px; }
-    .recensione p.data { color: gray; font-size: 12px; margin: 5px 0; }
-    .recensione p.stelle { color: #f5b50a; font-size: 20px; margin: 5px 0; }
-    .recensione p.commento { font-size: 16px; color: #333; flex-grow: 1; }
+    h2.media-voto {
+      text-align: center;
+      font-size: 22px;
+      color: #f5b50a;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .recensioni-wrapper {
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
+    .recensioni-container {
+      display: flex;
+      width: max-content;
+      animation: scroll 40s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .recensione {
+      flex: 0 0 auto;
+      width: 320px;
+      min-height: 320px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .recensione img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .recensione h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .recensione p.data {
+      color: gray;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    .recensione p.stelle {
+      color: #f5b50a;
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    .recensione p.commento {
+      font-size: 16px;
+      color: #333;
+      flex-grow: 1;
+    }
     @media screen and (max-width: 768px) {
-      .recensione { width: 90%; min-height: auto; }
-      .recensioni-container { animation: scroll 80s linear infinite; }
-      .recensione h4 { font-size: 16px; }
-      .recensione p.commento { font-size: 14px; }
+      .recensione {
+        width: 90%;
+        min-height: auto;
+      }
+      .recensioni-container {
+        animation: scroll 80s linear infinite;
+      }
+      .recensione h4 {
+        font-size: 16px;
+      }
+      .recensione p.commento {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-  <h2 class="media-voto" style="color:#f5b50a; font-weight: bold;">&#11088; 4.8 su 5 ? Recensioni verificate dei nostri clienti</h2>
+  <h2 class="media-voto">&#11088; 4.8 su 5 ? Recensioni verificate dei nostri clienti</h2>
   <div class="recensioni-wrapper">
     <div class="recensioni-container">
       
@@ -47,7 +105,9 @@
       <h4>Lucia Cutuli</h4>
       <p class="data">13/02/2025</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-      <p class="commento">(
+      <p class="commento">() I bought the blue slippers covered in boiled wool to give them to a friend, who really liked them and was satisfied: cute, warm, comfortable and light. I would add that the delivery was punctual, the courier was kind and efficient. Excellent value for money.
+
+
 Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un' amica, che le ha molto gradite ed ? rimasta soddisfatta: carine, calde, comode e leggere. Aggiungo che la consegna ? stata puntuale, il corriere gentile ed efficiente. Ottimo il rapporto qualit? -prezzo.</p>
     </div>
     <div class="recensione">
@@ -57,7 +117,7 @@ Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un' amic
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Ottimo servizio , complimenti.
 
-
+()
 Excellent service, congratulations.</p>
     </div>
     <div class="recensione">
@@ -67,7 +127,7 @@ Excellent service, congratulations.</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Gi? provato le calzature da ballo latino... Numero perfetto... Velocissimi nella consegna... Prezzo perfetto...
 
-
+()
 Already tried the Latin dance shoes... Perfect size... Very fast delivery... Perfect price...</p>
     </div>
     <div class="recensione">
@@ -78,7 +138,7 @@ Already tried the Latin dance shoes... Perfect size... Very fast delivery... Per
       <p class="commento">Veloci nella spedizione
 grazie mille
 
-
+()
 Fast shipping
 thanks a lot</p>
     </div>
@@ -89,7 +149,7 @@ thanks a lot</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Venditore efficiente e corretto. Tempi di spedizione rispettati. Articolo come da descrizione.
 
-
+()
 Efficient and correct seller. Shipping times respected. Item as described.</p>
     </div>
     <div class="recensione">
@@ -99,7 +159,7 @@ Efficient and correct seller. Shipping times respected. Item as described.</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">benissimo. arrivo dal nord al sud in 3 giorni, tutto puantale e corretto. grazie al prossimo ordine
 
-
+()
 very good. I arrive from north to south in 3 days, everything on time and correct. thanks for the next order</p>
     </div>
     <div class="recensione">
@@ -109,7 +169,7 @@ very good. I arrive from north to south in 3 days, everything on time and correc
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Complimenti! Prodotto ottimo e spedizione veloce. Sono molto soddisfatta. Consiglio
 
-
+()
 Congratulations! Excellent product and fast shipping. I am very satisfied. I recommend</p>
     </div>
     <div class="recensione">
@@ -119,7 +179,7 @@ Congratulations! Excellent product and fast shipping. I am very satisfied. I rec
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Ottimo prodotto, come ordinato, arrivato puntuale. Grazie
 
-
+()
 Great product, as ordered, arrived on time. Thanks</p>
     </div>
     <div class="recensione">
@@ -134,7 +194,9 @@ Great product, as ordered, arrived on time. Thanks</p>
       <h4>Lucia Cutuli</h4>
       <p class="data">13/02/2025</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-      <p class="commento">(
+      <p class="commento">() I bought the blue slippers covered in boiled wool to give them to a friend, who really liked them and was satisfied: cute, warm, comfortable and light. I would add that the delivery was punctual, the courier was kind and efficient. Excellent value for money.
+
+
 Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un' amica, che le ha molto gradite ed ? rimasta soddisfatta: carine, calde, comode e leggere. Aggiungo che la consegna ? stata puntuale, il corriere gentile ed efficiente. Ottimo il rapporto qualit? -prezzo.</p>
     </div>
     <div class="recensione">
@@ -144,7 +206,7 @@ Ho acquistato le pantofole blu rivestite di lana cotta per regalarle ad un' amic
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Ottimo servizio , complimenti.
 
-
+()
 Excellent service, congratulations.</p>
     </div>
     <div class="recensione">
@@ -154,7 +216,7 @@ Excellent service, congratulations.</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Gi? provato le calzature da ballo latino... Numero perfetto... Velocissimi nella consegna... Prezzo perfetto...
 
-
+()
 Already tried the Latin dance shoes... Perfect size... Very fast delivery... Perfect price...</p>
     </div>
     <div class="recensione">
@@ -165,7 +227,7 @@ Already tried the Latin dance shoes... Perfect size... Very fast delivery... Per
       <p class="commento">Veloci nella spedizione
 grazie mille
 
-
+()
 Fast shipping
 thanks a lot</p>
     </div>
@@ -176,7 +238,7 @@ thanks a lot</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Venditore efficiente e corretto. Tempi di spedizione rispettati. Articolo come da descrizione.
 
-
+()
 Efficient and correct seller. Shipping times respected. Item as described.</p>
     </div>
     <div class="recensione">
@@ -186,7 +248,7 @@ Efficient and correct seller. Shipping times respected. Item as described.</p>
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">benissimo. arrivo dal nord al sud in 3 giorni, tutto puantale e corretto. grazie al prossimo ordine
 
-
+()
 very good. I arrive from north to south in 3 days, everything on time and correct. thanks for the next order</p>
     </div>
     <div class="recensione">
@@ -196,7 +258,7 @@ very good. I arrive from north to south in 3 days, everything on time and correc
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Complimenti! Prodotto ottimo e spedizione veloce. Sono molto soddisfatta. Consiglio
 
-
+()
 Congratulations! Excellent product and fast shipping. I am very satisfied. I recommend</p>
     </div>
     <div class="recensione">
@@ -206,7 +268,7 @@ Congratulations! Excellent product and fast shipping. I am very satisfied. I rec
       <p class="stelle">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p class="commento">Ottimo prodotto, come ordinato, arrivato puntuale. Grazie
 
-
+()
 Great product, as ordered, arrived on time. Thanks</p>
     </div>
     </div>
