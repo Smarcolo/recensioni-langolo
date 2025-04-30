@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Recensioni L'Angolo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
+      background-color: #fff;
     }
-
     h2 {
       text-align: center;
-      margin: 30px 0 10px;
+      margin: 30px 10px 10px;
+      font-size: 22px;
     }
-
-    .iframe-wrapper {
-      overflow-x: auto;
-      white-space: nowrap;
-      scroll-behavior: smooth;
-    }
-
     iframe {
-      min-width: 1000px;
-      width: 2000px; /* larghezza fissa grande per scroll */
-      height: 700px;
+      width: 100%;
+      height: 620px;
       border: none;
-      display: inline-block;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
 
-  <h2>4.8 su 5 su Google - Cosa dicono i nostri clienti👇</h2>
+  <h2>Cosa dicono i nostri clienti 👇</h2>
 
-  <div class="iframe-wrapper" id="scroll-container">
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbyBmqRG0H-eRsAm5aVTOo7JCjvToIo2EF2TFB1j8qyp99zllivWF7_sEv4-ngjameVA9g/exec" 
-      loading="lazy" 
-      allowfullscreen>
-    </iframe>
-  </div>
+  <iframe id="reviewsFrame"
+    src="https://script.google.com/macros/s/AKfycbyBmqRG0H-eRsAm5aVTOo7JCjvToIo2EF2TFB1j8qyp99zllivWF7_sEv4-ngjameVA9g/exec"
+    scrolling="no">
+  </iframe>
 
   <script>
-    const container = document.getElementById('scroll-container');
-    let scrollAmount = 0;
+    // Autoscroll orizzontale dentro l’iframe
+    const scrollSpeed = 0.4; // Velocità (più basso = più lento)
 
-    function autoScroll() {
-      scrollAmount += 1;
-      if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-        scrollAmount = 0;
-      }
-      container.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-    }
+    const startAutoScroll = () => {
+      const iframe = document.getElementById('reviewsFrame');
+      let scrollLeft = 0;
 
-    setInterval(autoScroll, 40); // più basso = più veloce
+      const interval = setInterval(() => {
+        if (iframe && iframe.contentWindow && iframe.contentDocument) {
+          const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+          const container = innerDoc.querySelector('.container');
+          if (container) {
+            scrollLeft += scrollSpeed;
+            container.scrollLeft = scrollLeft;
+            if (scrollLeft >= container.scrollWidth - container.clientWidth) {
+              scrollLeft = 0; // ricomincia da capo
+            }
+          }
+        }
+      }, 20); // ogni 20ms = ~50fps
+    };
+
+    window.addEventListener("load", () => {
+      setTimeout(startAutoScroll, 1000); // aspetta caricamento iframe
+    });
   </script>
 
 </body>
